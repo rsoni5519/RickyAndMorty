@@ -1,0 +1,110 @@
+body{
+    padding: 15px;
+}
+.search-box{
+    margin-bottom: 20px; 
+}   
+.search-form{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    border: 0px;
+}
+.card-body{
+    padding: 0px;
+    position: relative;
+}
+.list-group-item{
+    padding: 15px;
+}
+.card-header{
+    background-color: rgba(0, 0, 0, 0.5);   
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+}
+.card-header h2{
+    margin-bottom: 0px;
+}
+.card-text{
+    color: rgb(132, 30, 30);
+    margin-bottom: -14px !important;
+}
+.card-box{
+    background-color: #222222;
+    padding: 10px;
+}
+.list-group{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #333333;
+}
+.list-group-item{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 1px solid rgba(255,255,255,.125)
+
+}
+.list-group-item span{
+    color: rgb(158, 158, 158);
+}
+.list-group-item p{
+    color: rgb(255, 152, 0);
+    margin-bottom: 0px;
+    text-align: right;
+}
+.select-option{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.select-option select{
+    width: 150px;
+    background: transparent;
+}
+.no-record{
+    color: #f70909;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .card-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card-header h2{
+        font-size: 16px;
+    }
+    .card-header p{
+        font-size: 12px;
+    }
+    .col-6.col-sm-3{
+        padding: 10px 5px 10px 5px;
+    }
+    .card-box{
+        background-color: #ffffff;
+    }
+    .select-option{
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 15px;
+    }
+    .select-option form{
+        width: 100%;
+    }
+    .select-option select{
+        width: 100%;
+    }
+    .search-form input{
+        width: calc(100% - 72px);
+    }
+    .list-group-flush .list-group-item{
+        font-size: 12px;
+    }
+}
